@@ -45,13 +45,13 @@
                             <constraint firstItem="sCe-jZ-eO0" firstAttribute="leading" secondItem="LaF-DT-2Ut" secondAttribute="leading" constant="16" id="1yd-Cd-sRD"/>
                             <constraint firstItem="1p0-hK-k2h" firstAttribute="width" secondItem="hLL-dI-oYC" secondAttribute="width" id="5hz-KK-Nit"/>
                             <constraint firstItem="hLL-dI-oYC" firstAttribute="leading" secondItem="LaF-DT-2Ut" secondAttribute="leading" constant="16" id="7b1-BA-lQr"/>
+                            <constraint firstItem="hLL-dI-oYC" firstAttribute="top" secondItem="LaF-DT-2Ut" secondAttribute="top" constant="60" id="BpE-tu-b2z"/>
                             <constraint firstItem="1p0-hK-k2h" firstAttribute="top" secondItem="hLL-dI-oYC" secondAttribute="bottom" constant="30" id="CgI-Sk-cwp"/>
                             <constraint firstItem="LaF-DT-2Ut" firstAttribute="trailing" secondItem="hLL-dI-oYC" secondAttribute="trailing" constant="16" id="DIo-FS-anf"/>
+                            <constraint firstItem="1p0-hK-k2h" firstAttribute="centerX" secondItem="hLL-dI-oYC" secondAttribute="centerX" id="Pku-Bc-Hhl"/>
                             <constraint firstItem="LaF-DT-2Ut" firstAttribute="bottom" secondItem="sCe-jZ-eO0" secondAttribute="bottom" constant="20" id="WAR-Hc-DLI"/>
                             <constraint firstItem="1p0-hK-k2h" firstAttribute="height" secondItem="hLL-dI-oYC" secondAttribute="height" id="bfP-bn-uNF"/>
-                            <constraint firstItem="hLL-dI-oYC" firstAttribute="top" secondItem="LaF-DT-2Ut" secondAttribute="top" constant="100" id="fdr-lJ-FZu"/>
                             <constraint firstItem="1p0-hK-k2h" firstAttribute="centerX" secondItem="hLL-dI-oYC" secondAttribute="centerX" id="hb5-iH-DCr"/>
-                            <constraint firstItem="hLL-dI-oYC" firstAttribute="top" secondItem="LaF-DT-2Ut" secondAttribute="top" constant="60" id="vke-eP-AJf"/>
                             <constraint firstItem="LaF-DT-2Ut" firstAttribute="trailing" secondItem="sCe-jZ-eO0" secondAttribute="trailing" constant="16" id="yJz-o7-JXb"/>
                             <constraint firstItem="1p0-hK-k2h" firstAttribute="centerX" secondItem="hLL-dI-oYC" secondAttribute="centerX" id="yPY-BA-tsQ"/>
                         </constraints>
