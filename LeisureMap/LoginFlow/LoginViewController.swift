@@ -20,6 +20,15 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let accept="abcdeABCDE"
+        let cs=NSCharacterSet(charactersIn: accept).inverted
+        let filtered=string.components(separatedBy: cs).joined(separator: "")
+        if(string != filtered){
+            return false
+        }
+        
+        //Max Length
         var maxLength:Int=0
         if textField.tag==1{
             maxLength=4
