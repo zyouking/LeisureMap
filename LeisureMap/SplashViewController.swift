@@ -10,10 +10,15 @@ import UIKit
 
 class SplashViewController: UIViewController {
 
+    // score.azurewebsites.net/api/version/1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let defaults:UserDefaults=UserDefaults.standard
+        defaults.synchronize()
     }
     
 
