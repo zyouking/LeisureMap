@@ -10,9 +10,15 @@ import UIKit
 
 class SplashViewController: UIViewController,AsyncResponseDelegate {
     
-    
+    //MARK:AsyncResponseDelegate
     func receivedResponse(_ sender: AsyncRequestWorker, responseString: String, tag: Int) {
         print(responseString)
+        let defaults:UserDefaults=UserDefaults.standard
+        defaults.set(responseString, forKey: "serviceVersion")
+        defaults.synchronize()
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "moveToLoginViewSegue", sender: self)
+        }
     }
     
 
@@ -25,16 +31,16 @@ class SplashViewController: UIViewController,AsyncResponseDelegate {
 
         // Do any additional setup after loading the view.
         
-        let defaults:UserDefaults=UserDefaults.standard
-        defaults.synchronize()
+
         
         appVersion=""+(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String)!
         lbVersion.text=appVersion
         
         requestWorker=AsyncRequestWorker()
         requestWorker?.responseDelegate=self
+        
         let from="https://score.azurewebsites.net/api/version/\(String(describing:appVersion))"
-        requestWorker?.getResponse(from: from, tag: 1)
+        self.requestWorker?.getResponse(from: from, tag: 1)
 //        let url=URL(string:from)!
 //        let requst=URLRequest(url: url)
 //        let config=URLSessionConfiguration.default
