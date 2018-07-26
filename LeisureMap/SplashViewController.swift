@@ -9,6 +9,8 @@
 import UIKit
 
 class SplashViewController: UIViewController,AsyncResponseDelegate {
+    
+    
     func receivedResponse(_ sender: AsyncRequestWorker, responseString: String, tag: Int) {
         print(responseString)
     }

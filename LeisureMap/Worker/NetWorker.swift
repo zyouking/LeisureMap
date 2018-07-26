@@ -27,7 +27,7 @@ class AsyncRequestWorker {
                 let responseString=String(dataString!)
                 //                print(<#T##items: Any...##Any#>, separator: <#T##String#>, terminator: <#T##String#>)
                 print(responseString)
-                self.responseDelegate?.receivedResponse(self, responseString: "", tag: tag)
+                self.responseDelegate?.receivedResponse(self, responseString: responseString, tag: tag)
                 
             }
             
